@@ -1,0 +1,62 @@
+body {
+	margin: 20px;
+}
+#Dial {
+	user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+
+	background: #eee;
+	border-radius: 50%;
+	font-family: 'Arial';
+	font-weight: bold;
+	line-height: 2em;
+	height: 260px;
+	width: 260px;
+	z-index: 9;
+}
+#Dial #Handle {
+	background: url(../images/slider_handle.png) no-repeat 0 0 #ea9c00;
+	border-radius: 50%;
+	height:60px;
+	visibility:hidden;
+	position:absolute;
+	width:60px;
+	z-index:999
+}
+#Dial #Handle:after {
+	transform:rotate(180deg);
+	position: relative;
+  left: 18px;
+}
+#Dial > span {
+	color: #363636;
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    width: 95%;
+}
+#Dial .day{
+	padding-top:22%;
+}
+#Dial .full-date{
+	color: #363636;
+	font-size:30px;
+	line-height:30px;
+	text-align:center;
+	text-shadow: 1px 1px 2px #999;
+    text-transform: uppercase;
+}
+#Dial .time{
+	color:#b87d07;
+	font-size:62px;
+	line-height:68px;
+	text-align:center;
+	text-shadow: 2px 2px 2px #999;
+}
+#Dial .year{
+	display:none;
+}
